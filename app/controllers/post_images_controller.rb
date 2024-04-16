@@ -20,7 +20,7 @@ class PostImagesController < ApplicationController
 
   def destroy
     post_image = PostImage.find(params[:id])
-    PostImage.destroy
+    post_image.destroy
     redirect_to '/post_images'
   end
 
